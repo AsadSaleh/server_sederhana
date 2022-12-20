@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
 });
 
 router.get("/about", function (req, res) {
-  res.json({ testduludah: "belum tau isinya apa" });
+  res.json({ halo: "tes nodemon 456" });
 });
 
 router.get("/sitemap", function (req, res) {
