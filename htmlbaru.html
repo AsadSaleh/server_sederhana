@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Justify Content: Untuk mengatur posisi element sejajar arah flex (secara
+      "horizontal")
+    </p>
+    <p>
+      Align Items: Untuk mengatur posisi element tegak lurus arah flex (secara
+      "vertical")
+    </p>
+
+    <p>Kapan kita pakai ID & kapan pakai class?</p>
+
+    id => tunggal
+    <br />
+    class => banyak
+
+    <p>Untuk styling kita akan banyak bikin class, karena class = resusable</p>
+    <p>Kita pakai ID, biasanya untuk JavaScript</p>
+
+    <div class="flex-container">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+    </div>
+    <button id="send-money">Kirim Uang</button>
+  </body>
+  <script>
+    document.getElementById("send-money").addEventListener("click", () => {
+      console.log("Kirim Uang");
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+    .flex-container {
+      background-color: rgba(0, 0, 0, 0.2);
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .a {
+      background-color: blue;
+      color: white;
+      width: 50px;
+      height: 120px;
+    }
+    .b {
+      background-color: red;
+      color: white;
+      width: 100px;
+      height: 80px;
+    }
+    .c {
+      background-color: green;
+      color: white;
+      width: 200px;
+      height: 20px;
+    }
+    .d {
+      background-color: black;
+      color: white;
+      width: 150px;
+      height: 250px;
+    }
+
+    /* #test {
+        .....
+    } */
+  </style>
+</html>
