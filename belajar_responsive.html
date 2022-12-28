@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Contoh 1 -->
+    <div class="contoh-pertama">Contoh 1</div>
+    <!-- Contoh 2 -->
+    <div class="container">
+      <div class="content-1">Contoh 2</div>
+      <div class="content-2">Contoh 2</div>
+    </div>
+    <!-- Contoh 3 -->
+    <div class="container-3">
+      <img
+        class="content-3-1"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Q5GbEisDJ1nUzeXL_oCSPqpcsjlOJfvTh5HlCrkJ&s"
+      />
+      <img
+        class="content-3-2"
+        src="https://i.pinimg.com/originals/0b/6c/fd/0b6cfda3c13a9ac9da28f75ff2f3e731.jpg"
+      />
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .contoh-pertama {
+      width: 100vw;
+      height: 200px;
+      background-color: orange;
+    }
+    .container {
+      width: 100vw;
+      /* height: 200px; */
+      background-color: gray;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content-1 {
+      background-color: blue;
+      width: 400px;
+      height: 100px;
+    }
+    .content-2 {
+      background-color: red;
+      width: 400px;
+      height: 150px;
+    }
+    /* kalau layar < 700px */
+    @media screen and (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    /* screen >= 769px */
+    @media screen and (min-width: 769px) {
+      .contoh-pertama {
+        background-color: green;
+      }
+    }
+
+    .container-3 {
+      width: 60vw;
+      background-color: rgba(128, 0, 128, 0.661);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 500px) {
+      .container-3 {
+        width: 100vw;
+        padding: 0 5px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .content-3-1 {
+      width: 50%;
+    }
+    .content-3-2 {
+      width: 50%;
+    }
+  </style>
+</html>
