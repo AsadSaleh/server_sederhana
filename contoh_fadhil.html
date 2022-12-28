@@ -7,7 +7,25 @@
     <title>Document</title>
   </head>
   <body>
-    <nav></nav>
+    <!-- Judul kiri atas -->
+    <nav class="my-nav">
+      <div class="logo"><a href="">Fadhil's.</a></div>
+      <!-- End of Judul Kiri Atas -->
+      <ul class="ul-navbar">
+        <li class="li-navbar">
+          <a href="#" class="a-navbar">HOME</a>
+        </li>
+        <li class="li-navbar">
+          <a href="about.html" class="a-navbar">ABOUT</a>
+        </li>
+        <li class="li-navbar">
+          <a href="sepakbola.html" class="a-navbar">BERITA SEPAKBOLA</a>
+        </li>
+        <li class="li-navbar">
+          <a href="contact.html" class="a-navbar">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <!-- 1 -->
       <div class="main-content">
@@ -35,13 +53,43 @@
     :root {
       --hitam: #191919;
     }
-
     html {
       font-family: sans-serif;
     }
     body {
       margin: 0;
       padding: 0;
+    }
+    ul {
+      margin: 0;
+    }
+    .my-nav {
+      background-color: purple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 0 20px;
+      background-color: rgb(230, 222, 228);
+    }
+    .ul-navbar {
+      display: flex;
+      list-style-type: none;
+      gap: 20px;
+    }
+    .a-navbar {
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+      font-size: 18px;
+      padding: 4px 8px;
+      border-radius: 5px;
+      transition: all;
+      transition-duration: 200ms;
+    }
+    .a-navbar:hover {
+      background-color: #191919;
+      color: white;
     }
     .my-profile {
       width: 200px;
