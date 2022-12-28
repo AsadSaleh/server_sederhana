@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <!-- 1 -->
+      <div class="main-content">
+        <h1 class="big-text">Tak Pernah Berhenti Belajar</h1>
+        <p class="small-text">Fadhil Mohamad</p>
+      </div>
+      <!-- 2 -->
+      <div class="second-content">
+        <img class="my-profile profile-left" src="./images/kucing_lucu.jpeg" />
+        <div class="profile-right">
+          <p style="font-size: 40px">Fadhil Mohamad</p>
+          <p>Kenalkan aku adalah seorang yang tak pernah berhenti belajar</p>
+          <p>Skills</p>
+          <ul>
+            <li>Pilot</li>
+            <li>Business</li>
+            <li>Coding</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <style>
+    :root {
+      --hitam: #191919;
+    }
+
+    html {
+      font-family: sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .my-profile {
+      width: 200px;
+      border-radius: 20px;
+    }
+    .main-content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(#ffffff00, var(--hitam)),
+        url(https://impact2020.edf.org/wp-content/uploads/2020/11/intro_chapterBackground-01-1536x853.jpg);
+      flex-direction: column;
+    }
+    .big-text {
+      margin: 0;
+      padding: 0;
+      font-size: 60px;
+      /* mix-blend-mode: color; */
+      color: black;
+    }
+    .small-text {
+      font-size: 40px;
+      color: rgb(34, 34, 34);
+      margin: 0;
+      padding: 0;
+      /* font-style: italic; */
+    }
+    .second-content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background-color: var(--hitam);
+    }
+    .second-content p {
+      color: white;
+    }
+    .second-content li {
+      color: white;
+    }
+    .profile-left {
+      /* flex: 1; */
+    }
+    .profile-right {
+      /* flex: 2; */
+    }
+  </style>
+</html>
